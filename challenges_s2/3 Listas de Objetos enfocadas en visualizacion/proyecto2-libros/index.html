@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Biblioteca Virtual</h1>
+        <p>Transformación de libros en formato: "Título (Año) - Autor"</p>
+        
+        <div class="controls">
+            <button id="addBook">📖 Agregar Libro</button>
+            <button id="sortByYear">📅 Ordenar por Año</button>
+            <button id="sortByAuthor">👤 Ordenar por Autor</button>
+            <button id="clearBooks">🗑️ Limpiar Lista</button>
+        </div>
+        
+        <div class="stats">
+            <span id="totalBooks">Total: 0 libros</span>
+            <span id="oldestBook">Más antiguo: -</span>
+            <span id="newestBook">Más reciente: -</span>
+        </div>
+        
+        <div class="books-section">
+            <h2>📋 Lista de Libros</h2>
+            <ul id="booksList" class="books-list">
+                <!-- Los libros se generarán dinámicamente aquí -->
+            </ul>
+        </div>
+        
+        <div class="books-section">
+            <h2>🔍 Vista Previa de Formato</h2>
+            <div id="formatPreview" class="format-preview">
+                <!-- Vista previa del formato se mostrará aquí -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

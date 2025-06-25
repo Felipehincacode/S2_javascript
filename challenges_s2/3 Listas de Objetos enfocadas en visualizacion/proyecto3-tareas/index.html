@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✅ Gestor de Tareas</h1>
+        <p>Visualización de tareas con diferentes estructuras HTML según su estado</p>
+        
+        <div class="controls">
+            <button id="addTask">➕ Agregar Tarea</button>
+            <button id="toggleAll">🔄 Cambiar Estado</button>
+            <button id="clearCompleted">🗑️ Limpiar Completadas</button>
+            <button id="clearAll">💥 Limpiar Todo</button>
+        </div>
+        
+        <div class="stats">
+            <span id="totalTasks">Total: 0 tareas</span>
+            <span id="completedTasks">Completadas: 0</span>
+            <span id="pendingTasks">Pendientes: 0</span>
+        </div>
+        
+        <div class="tasks-section">
+            <h2>📋 Lista de Tareas</h2>
+            <div id="tasksList" class="tasks-list">
+                <!-- Las tareas se generarán dinámicamente aquí -->
+            </div>
+        </div>
+        
+        <div class="tasks-section">
+            <h2>🎯 Tareas Completadas</h2>
+            <div id="completedTasksList" class="tasks-list completed">
+                <!-- Las tareas completadas se mostrarán aquí -->
+            </div>
+        </div>
+        
+        <div class="tasks-section">
+            <h2>⏳ Tareas Pendientes</h2>
+            <div id="pendingTasksList" class="tasks-list pending">
+                <!-- Las tareas pendientes se mostrarán aquí -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
